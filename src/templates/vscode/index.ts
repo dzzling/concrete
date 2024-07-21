@@ -28,7 +28,7 @@ export const generate: ThemeGenerator = async ({
             name: "halloweene-vscode",
             displayName: `Halloweene`,
             description:
-              "A vibrant dark theme that blends into MacOS seamlessly.",
+              "An elegant and minimalistic theme for your everyday workflow. 🎃",
             version: process.env.npm_package_version,
             engines: {
               vscode: "^1.14.0",
