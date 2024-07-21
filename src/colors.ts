@@ -1,3 +1,12 @@
+// Theme colors
+// #A798FF
+// #C3C3FF
+// #E0F6FF
+// #FFDEC7
+// #A18C82
+// #FF976B
+// #FFB65C
+
 const COLORS = {
   neutral: {
     "75": "#131313",
