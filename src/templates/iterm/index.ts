@@ -12,7 +12,7 @@ export const generate: ThemeGenerator = async ({
 }) => {
   await ensureDir(baseOutputDirectory);
   await fs.writeFile(
-    path.join(baseOutputDirectory, `./concrete.itermcolors`),
+    path.join(baseOutputDirectory, `./halloweene.itermcolors`),
     createTheme(colors)
   );
 };

@@ -1,10 +1,10 @@
 <p align="center">
   <img src="resources/icon.png" alt="Logo" height="128">
 
-  <h3 align="center">Concrete</h3>
+  <h3 align="center">Halloweene</h3>
 
   <p align="center">
-    A vibrant dark theme that blends into MacOS seamlessly.
+    An elegant and minimilastic theme for your everyday workflow. This is built on top <link>https://github.com/bezbac/concrete</link>
 
   </p>
 </p>
@@ -14,33 +14,3 @@
   <img src="resources/preview.png" alt="Logo">
 </p>
 
-## Supported Applications
-
-| Application        | Support | Category    | Links                                                                                                                            |
-| ------------------ | ------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Visual Studio Code | ✅      | Editor      | [Link](https://code.visualstudio.com), [Marketplace](https://marketplace.visualstudio.com/items?itemName=bezbac.concrete-vscode) |
-| helix              | ✅      | Editor      | [Link](https://helix-editor.com)                                                                                                 |
-| iterm2             | ✅      | Terminal    | [Link](https://iterm2.com)                                                                                                       |
-| alacritty          | ✅      | Terminal    | [Link](https://alacritty.org)                                                                                                    |
-| wezterm            | ✅      | Terminal    | [Link](https://wezfurlong.org/wezterm/index.html)                                                                                |
-| zellij             | ✅      | Multiplexer | [Link](https://zellij.dev)                                                                                                       |
-| prism              | 🚧      | Library     | [Link](https://prismjs.com)                                                                                                      |
-
-[Suggest your favourite application.](https://github.com/bezbac/concrete/issues)
-
----
-
-Legend:
-
-- ✅ Supported
-- 🚧 Beta
-
-## Create a new release
-
-`pnpm release`
-
-### Release vscode extension
-
-`cd output/vscode`  
-`vsce package`  
-`vsce publish`

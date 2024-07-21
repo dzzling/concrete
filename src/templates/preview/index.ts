@@ -83,7 +83,7 @@ async function createTheme(colors: Colors): Promise<string> {
         </style>
       </head>
       <body>
-        <h1>Concrete Dark Palette</h1>
+        <h1>Halloweene Dark Palette</h1>
         <ul class="colors">
           ${renderColors(colors)}
         </ul>

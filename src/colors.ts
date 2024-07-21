@@ -11,15 +11,15 @@ const COLORS = {
     "1000": "#fff",
   },
   syntax: {
-    string: "#9ecbff",
-    keyword: "#D76496",
-    entity: "#b392f0",
-    regexp: "#85e89d",
-    deleted: "#f97583",
-    comment: "#6a737d",
-    variable: "#f1993b",
-    support: "#4091c9",
-    punctuation: "#F9D849",
+    string: "#FFDEC7",
+    keyword: "#A798FF",
+    entity: "#FF976B",
+    regexp: "#FFB65C",
+    deleted: "#FFB65C",
+    comment: "#A18C82",
+    variable: "#C3C3FF",
+    support: "#A798FF",
+    punctuation: "#E0F6FF",
   },
   semantic: {
     error: "#e54468",
@@ -28,7 +28,7 @@ const COLORS = {
     addedResource: "#85e89d",
     untrackedResource: "#f692ce",
     conflictingResource: "#b392f0",
-    modifiedResource: "#f1993b",
+    modifiedResource: "#FF976B",
     ignoredResource: "#6a737d",
 
     lintError: "#F32E2E",
@@ -37,7 +37,7 @@ const COLORS = {
   },
   gutter: {
     deleted: "#d73a49",
-    modified: "#f1993b",
+    modified: "#FF976B",
     added: "#28a745",
   },
   background: {
@@ -47,14 +47,14 @@ const COLORS = {
     modified: "#c24e00",
     added: "#144620",
 
-    badge: "#1d5bc9",
+    badge: "#A798FF",
 
     matchHighlight: "#ffd33d33",
     findMatch: "#ffd33d44",
     findMatchHighlight: "#ffd33d22",
 
     selection: "#3392FF44",
-    activeSelection: "#1d5bc9",
+    activeSelection: "#A798FF",
     inactiveSelection: "#3392FF22",
 
     addedDiff: "#28a74530",

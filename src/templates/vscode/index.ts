@@ -25,8 +25,8 @@ export const generate: ThemeGenerator = async ({
         path.join(outputDirectory, `./package.json`),
         JSON.stringify(
           {
-            name: "concrete-vscode",
-            displayName: `Concrete`,
+            name: "halloweene-vscode",
+            displayName: `Halloweene`,
             description:
               "A vibrant dark theme that blends into MacOS seamlessly.",
             version: process.env.npm_package_version,
@@ -37,19 +37,14 @@ export const generate: ThemeGenerator = async ({
             contributes: {
               themes: [
                 {
-                  label: `Concrete`,
+                  label: `Halloweene`,
                   uiTheme: "vs-dark",
-                  path: `./themes/concrete.json`,
+                  path: `./themes/halloweene.json`,
                 },
               ],
             },
-            publisher: "bezbac",
-            author: "Ben Bachem <10088265+bezbac@users.noreply.github.com>",
-            homepage: "https://github.com/bezbac/concrete",
-            repository: {
-              type: "git",
-              url: "https://github.com/bezbac/concrete",
-            },
+            publisher: "dzzling",
+            author: "Denise Müller",
             icon: "images/icon.png",
             license: "BSD-3-Clause",
           },
@@ -59,7 +54,7 @@ export const generate: ThemeGenerator = async ({
       ),
 
       fs.writeFile(
-        `./output/vscode/themes/concrete.json`,
+        `./output/vscode/themes/halloweene.json`,
         JSON.stringify(createTheme(colors), null, 2)
       ),
     ])
@@ -71,7 +66,7 @@ function createTheme(colors: Colors) {
   const editorForeground = colors.neutral[840];
 
   return {
-    name: "Concrete",
+    name: "Halloweene",
     colors: {
       focusBorder: colors.transparent,
       foreground: colors.neutral[840],
@@ -214,6 +209,13 @@ function createTheme(colors: Colors) {
       "editor.wordHighlightStrongBorder": colors.neutral[840],
       "editorBracketMatch.background": colors.neutral[380],
       "editorBracketMatch.border": colors.transparent,
+      "editorBracketHighlight.foreground1": colors.syntax.punctuation,
+      "editorBracketHighlight.foreground2": colors.syntax.keyword,
+      "editorBracketHighlight.foreground3": colors.syntax.entity,
+      "editorBracketHighlight.foreground4": colors.syntax.comment,
+      "editorBracketHighlight.foreground5": colors.neutral[840],
+      "editorBracketHighlight.foreground6": colors.neutral[1000],
+      "editorBracketHighlight.unexpectedBracket.foreground": colors.semantic.error,
 
       "editorGutter.modifiedBackground": colors.gutter.modified,
       "editorGutter.addedBackground": colors.gutter.added,
@@ -301,7 +303,7 @@ function createTheme(colors: Colors) {
           "variable.language",
         ],
         settings: {
-          foreground: colors.accent,
+          foreground: colors.syntax.string,
         },
       },
       {
@@ -375,7 +377,7 @@ function createTheme(colors: Colors) {
       {
         scope: "variable.other",
         settings: {
-          foreground: editorForeground,
+          foreground: colors.syntax.variable,
         },
       },
       {
@@ -584,6 +586,10 @@ function createTheme(colors: Colors) {
           "brackethighlighter.square",
           "brackethighlighter.angle",
           "brackethighlighter.quote",
+          "punctuation.definition.list.begin.python",
+          "punctuation.definition.list.end.python",
+          "punctuation.definition.arguments.end.python",
+          "punctuation.definition.arguments.begin.python",
         ],
         settings: {
           foreground: colors.neutral[840],

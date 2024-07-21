@@ -13,7 +13,7 @@ export const generate: ThemeGenerator = async ({
   await ensureDir(outputDirectory);
 
   await fs.writeFile(
-    path.join(outputDirectory, `./concrete.kdl`),
+    path.join(outputDirectory, `./halloweene.kdl`),
     createTheme(colors)
   );
 };
@@ -21,7 +21,7 @@ export const generate: ThemeGenerator = async ({
 const createTheme = (colors: Colors) => {
   return `
 themes {
-  concrete {
+  halloweene {
     black "${colors.neutral[125]}"
     bg "${colors.neutral[125]}"
     fg "${colors.neutral[380]}"

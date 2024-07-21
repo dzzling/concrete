@@ -1,19 +1,18 @@
 {
-  "name": "concrete",
+  "name": "halloweene",
   "version": "0.5.0",
   "main": "index.js",
-  "repository": "git@github.com:bezbac/concrete.git",
-  "author": "Ben Bachem <10088265+bezbac@users.noreply.github.com>",
+  "author": "Denise Müller",
   "scripts": {
     "format": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
     "build": "ts-node src/main.ts",
     "lint": "eslint .",
     "release": "release-it",
-    "apply/vscode": "rm -rf ~/.vscode/extensions/bezbac.concrete-vscode-* && cp -R './output/vscode' ~/.vscode/extensions/bezbac.concrete-vscode-$npm_package_version",
-    "apply/helix": "mkdir -p ~/.config/helix/themes/ && cp -R './output/helix/concrete.toml' ~/.config/helix/themes/concrete.toml",
-    "apply/zellij": "mkdir -p ~/.config/zellij/themes/ && cp -R './output/zellij/concrete.kdl' ~/.config/zellij/themes/concrete.kdl",
-    "apply/alacritty": "mkdir -p ~/.config/alacritty/themes/ && cp -R './output/alacritty/concrete.yaml' ~/.config/alacritty/themes/concrete.yaml"
+    "apply/vscode": "rm -rf ~/.vscode/extensions/dzzling.halloweene-vscode-* && cp -R './output/vscode' ~/.vscode/extensions/dzzling.halloweene-vscode-$npm_package_version",
+    "apply/helix": "mkdir -p ~/.config/helix/themes/ && cp -R './output/helix/halloweene.toml' ~/.config/helix/themes/halloweene.toml",
+    "apply/zellij": "mkdir -p ~/.config/zellij/themes/ && cp -R './output/zellij/halloweene.kdl' ~/.config/zellij/themes/halloweene.kdl",
+    "apply/alacritty": "mkdir -p ~/.config/alacritty/themes/ && cp -R './output/alacritty/halloweene.yaml' ~/.config/alacritty/themes/halloweene.yaml"
   },
   "private": "true",
   "devDependencies": {

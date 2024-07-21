@@ -15,7 +15,7 @@ export const generate: ThemeGenerator = async ({
   await ensureDir(outputDirectory);
 
   await fs.writeFile(
-    path.join(outputDirectory, `./concrete.yaml`),
+    path.join(outputDirectory, `./halloweene.yaml`),
     createTheme(colors)
   );
 };
